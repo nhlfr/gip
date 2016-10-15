@@ -1,7 +1,22 @@
+# Prerequisites
+*.d
+
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 *.o
 *.a
 *.so
+*.ko
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
 
 # Folders
 _obj
@@ -20,5 +35,46 @@ _cgo_export.*
 _testmain.go
 
 *.exe
-*.test
 *.prof
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# gip binaries
+/gip
+
+# Autotools
+Makefile
+Makefile.in
+/autom4te.cache
+/autoscan.log
+/autoscan-*.log
+/aclocal.m4
+/compile
+/config.h.in
+/config.log
+/config.status
+/configure
+/configure.scan
+/depcomp
+/install-sh
+/missing
+/stamp-h1
+
+# Temporary files
+*~
+*.swp
+*.sw?
+
+# Tests
+*.log
+*.test
+!cpplint.test
+!dockerfilelint.test
+!gofmt.test
+!go.test
+*.trs
+.deps
+.dirstamp
+cpplint.py
+test-driver
